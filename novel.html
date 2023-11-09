@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku</title>
+</head>
+<style>
+    body {
+  background-color: #EEE3CB;
+  font-family: classical diary demo;
+}
+
+.navbar {
+  background-color: #9BABB8;
+  padding: 5px 0;
+  font-size: 1.1rem;
+  border-radius: 20px;
+}
+
+.navbar1 {
+    background-image: url(/photoo/bekgro.jpeg);
+    color: rgb(216, 237, 255);
+    padding: 5px;
+    text-align: center;
+    background-color: #64a1c6; /* Warna latar belakang navbar */
+    overflow:hidden;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.navbar-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #EEE3CB;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #cebe9b;
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.book {
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+  transition: 0.9s;
+  position: relative;
+}
+
+.book img {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book-description {
+  display: none;
+  background-color: #9BABB8;
+  color: #fffbf3;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 80%;
+  transition: 0.9s;
+}
+
+.book:hover .book-description {
+  display:block;
+  transition: 0.7s;
+}
+button{
+    margin-left: 320px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    font-family: bubbly;
+    background-color: #9BABB8;
+    padding: 10px;
+    border-radius: 12px;
+    border: 0px;
+    width: 43%;
+}
+
+button:hover{
+  background-color: #546878;
+  color: azure;
+}
+
+
+</style>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/daftar.html">Daftar Buku</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pesan.html">Pemesanan Buku</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/tentang.html">tentang kami</a>
+              </li>
+              </ul>
+        </div>
+      </nav>
+
+      <nav class="navbar1">
+        <h1>'*•.¸♡ Serenity Novels ♡¸.•*'</h1>
+        <h2> P e m e s a n a n _ n o v e l </h2>
+    </nav>
+    <br>
+    <div class="book-container">
+        <div class="book">
+          <img src="/photoo/azzamine.jpg" alt="Buku 1" style="width: 200px;">
+          <div class="book-description">
+            <h2>Azzamine</h2>
+                <p>Novel Azzamine mengisahkan tentang perjalanan cinta Raden Azzam Al-Baihaqi (Azzam)
+                dan Haura Jasmine (Jasmine) yang bermula dari perjodohan. Azzam merupakan seoarang pria
+                yang sholeh, baik hati, lemah lembut, dan penyabar. Sedangkan, Jasmine merupakan seorang
+                wanita yang lumayan tomboy dan kurang sopan.
+                </p>
+          </div>
+        </div>
+        <div class="book">
+            <img src="/photoo/Bumi.jpeg" alt="Buku 2" style="width: 200px;">
+          <div class="book-description">
+            <h2>Bumi</h2>
+            <p>Bumi, merupakan rangkaian awal dari kisah sekelompok anak remaja berkemampuan istimewa.
+                Mereka yang istimewa, mampu pergi ke dunia parallel bumi, bertemu dengan klan lain dan
+                berhadapan dengan Tamus yang memiliki ambisi membebaskan si Tanpa Mahkota dan kemudian,
+                menguasai bumi</p>
+          </div>
+        </div>
+        <div class="book">
+            <img src="/photoo/dear j.jpg" alt="Buku 3" style="width: 200px;">
+          <div class="book-description">
+            <h2>Dear J</h2>
+            <p>Dear J adalah novel yang menceritakan tentang seorang pemuda bernama Na Jaemin.
+                Laki-laki “tak sempurna” yang dipandang sebelah mata karena kekurangannya, ia
+                seorang tunawicara, ia bisu. Jaemin sebagai murid transfer masuk ke kelas Jung
+                Jeha, kekasih Lee Jeno</p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="book-container">
+        <div class="book">
+          <img src="/photoo/dikta_dan_hukum.jpg" alt="Buku 4" style="width: 200px;">
+          <div class="book-description">
+            <h2>Dikta dan Hukum</h2>
+            <p>Novel ini bercerita tentang kisah cinta antara Dikta, seorang mahasiswa hukum 
+                yang dingin dan Nadhira, seorang mahasiswi hukum yang ceria. Dikta dan Nadhira 
+                adalah dua orang yang sangat berbeda, namun mereka saling jatuh cinta. Novel 
+                ini mengajarkan kita tentang arti cinta, persahabatan, dan perjuangan.</p>
+        </div>
+        </div>
+        <div class="book">
+            <img src="/photoo/Harry_Potter_and_the_Sorcerer's_Stone.jpg" alt="Buku 5" style="width: 200px;">
+          <div class="book-description">
+            <h2>Harry Potter and the Sorcerer</h2> 
+            <p>Novel ini berpusat pada upaya Harry untuk mengalahkan penyihir hitam jahat bernama 
+                Lord Voldemort, yang berambisi untuk menjadi makhluk abadi, menaklukkan dunia sihir, 
+                menguasai orang-orang nonpenyihir, dan membinasakan siapapun yang menghalangi jalannya, 
+                terutama Harry Potter</p>
+          </div>
+        </div>
+        <div class="book">
+            <img src="/photoo/just-a-friend-to-you.jpg" alt="Buku 6" style="width: 200px;">
+          <div class="book-description">
+            <h2>Just a friend to you</h2>
+            <p>Ada dua alasan kenapa aku menganggap jatuh cinta sama Arka adalah sebuah kebodohan 
+                yang aku ciptakan sendiri. 
+                Arka yang terlahir ganteng membuatnya dikelilingi cewek-cewek cantik. 
+                Menyandingkan diriku dengan Arka adalah sebuah harapan konyol. Berharap ada 
+                setitik kesempatan untukku agar bisa jadi pujaan hatinya adalah sebuah kebodohan yang nyata.</p>
+          </div>
+        </div>
+      </div>
+      
+    <div class="book-container">
+        <div class="book">
+          <img src="/photoo/duabelas.jpeg" alt="Buku 7" style="width: 200px;">
+          <div class="book-description">
+            <h2>Dua belas cerita Glen anggara</h2> 
+                <p>Glen adalah seorang pemuda kaya raya namun sayangnya ia memiliki kecerdasan di bawah rata-rata. 
+                    Walau tidak pintar, tapi Glen sangat menyukai kebebasan dan selalu melakukan apa pun yang bisa 
+                    membuatnya merasa bahagia</p>
+          </div>
+        </div>
+        <div class="book">
+            <img src="/photoo/laskar pelangi.jpeg" alt="Buku 8" style="width: 200px;">
+          <div class="book-description">
+            <h2>Laskar Pleangi</h2>
+                <p>Buku ini menceritakan tentang perjuangan Bu Muslimah dan Pak Harfan, dua orang guru 
+                    yang memiliki dedikasi tinggi dalam dunia pendidikan, dimana dengan usaha dan 
+                    kesungguhannya mereka berdua berhasil memajukan pendidikan di desa Gantong satu desa 
+                    terpencil di pilau Balitong.</p>
+
+        </div>
+        </div>
+        <div class="book">
+            <img src="/photoo/Perahu_Kertas.jpg" alt="Buku 9" style="width: 200px;">
+          <div class="book-description">
+            <h2>Perahu kertas</h2>
+                <p>Perahu Kertas mengisahkan pasang surut hubungan dua anak manusia, yaitu Kugy 
+                    (Maudy Ayunda) dan Keenan (Adipati Dolken). Kugy adalah seorang gadis tomboy, 
+                    periang, dan yang percaya bahwa dirinya adalah agen Dewa Neptunus.</p>
+
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="book-container">
+        <div class="book">
+            <img src="/photoo/pergi.jpg" alt="Buku 10" style="width: 200px;">
+          <div class="book-description">
+            <h2>Pergi</h2>
+            <p>Pergi mengisahkan tentang petualangan Bujang dalam menemukan makna dari tujuan hidupnya, 
+                dan menemukan arti dari kata 'Pergi' yang sesungguhnya. Bujang yang sering dijuluki 
+                sebagai “Sang Babi Hutan” memiliki nama asli Agam.</p>
+
+          </div>
+        </div>
+        <div class="book">
+            <img src="/photoo/septihan.jpeg" alt="Buku 11" style="width: 200px;">
+          <div class="book-description">
+            <h2>Septihan</h2>
+            <p>Septihan bercerita tentang kisah remaja yang dibalut dengan asmara dan persahabatan. 
+                Di sini ada dua tokoh utama, yaitu Septian Aidan Nugroho dan Jihan Halana. Septian 
+                adalah salah satu murid paling pintar di SMA Ganesha. Septian sendiri merupakan pribadi 
+                yang pendiam dan dingin.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="/pesan.html"><button>memesan</button></a>
+
+      
+
+</body>
+
+</html>
