@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku</title>
+</head>
+<style>
+    body {
+  background-color: #EEE3CB;
+  font-family: classical diary demo;
+}
+
+.navbar {
+  background-color: #9BABB8;
+  padding: 5px 0;
+  font-size: 1.1rem;
+  border-radius: 20px;
+}
+
+.navbar1 {
+    background-image: url(/photoo/bekgro.jpeg);
+    color: rgb(216, 237, 255);
+    padding: 5px;
+    text-align: center;
+    background-color: #64a1c6; /* Warna latar belakang navbar */
+    overflow:hidden;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.navbar-container {
+  margin: 0 auto;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #EEE3CB;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #cebe9b;
+}
+
+.book-container {
+  display: flex;
+  justify-content:center;
+  margin: 20px;
+}
+
+.book {
+  text-align: center;
+  transition: 0.3s;
+  margin: 40px;
+}
+
+.book img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.buy-button {
+  background-color: #9BABB8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: winkle;
+  font-size: 1.1rem;
+}
+
+.buy-button:hover {
+  background-color: #637583;
+}
+
+.order-form {
+  margin: 200px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.calculate-button {
+  background-color: #9BABB8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: winkle;
+  font-size: 1.2rem;
+}
+
+.calculate-button:hover {
+  background-color: #637583;
+}
+
+.receipt {
+  margin-top: 20px;
+  display: none;
+}
+
+/*untuk struk pembelian */
+.receipt {
+  background-color: #9BABB8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  text-align: center;
+  margin-left: 320px;
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+
+.receipt h2 {
+  color: #333;
+}
+
+.receipt p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.receipt span {
+  font-weight: bold;
+  color: #333;
+}
+
+</style>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/daftar.html">Daftar Buku</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pesan/">Pemesanan Buku</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/tentang.html">tentang kami</a>
+              </li>
+              </ul>
+        </div>
+      </nav>
+
+      <nav class="navbar1">
+        <h1>'*•.¸♡ Serenity Novels ♡¸.•*'</h1>
+        <h2> P e m e s a n a n _ n o v e l </h2>
+    </nav>
+
+<div class="book-container">
+  <div class="book">
+    <img src="/photoo/azzamine.jpg" alt="Buku 1" style="width: 200px;">
+    <h3>Azzamine</h3>
+    <p>Harga: Rp89.000</p>
+    <button class="buy-button" onclick="pesanBuku(89000)">Pesan</button>
+  </div>
+  <div class="book">
+    <img src="/photoo/Bumi.jpeg" alt="Buku 2" style="width: 200px;">
+    <h3>Bumi</h3>
+    <p>Harga: Rp165.000</p>
+    <button class="buy-button" onclick="pesanBuku(16500)">Pesan</button>
+  </div>
+<div class="book">
+  <img src="/photoo/dear j.jpg" alt="Buku 3" style="width: 200px;">
+  <h3>Dear J</h3>
+  <p>Harga: Rp168.000</p>
+  <button class="buy-button" onclick="pesanBuku(168000)">Pesan</button>
+</div>
+<div class="book">
+    <img src="/photoo/dikta_dan_hukum.jpg" alt="Buku 4" style="width: 200px;">
+    <h3>Dikta dan Hukum</h3>
+    <p>Harga: Rp80.700</p>
+    <button class="buy-button" onclick="pesanBuku(80700)">Pesan</button>
+  </div>
+</div>
+
+<div class="book-container">
+    <div class="book">
+      <img src="/photoo/duabelas.jpeg" alt="Buku 5" style="width: 200px;">
+      <h3>Dua belas cerita </h3>
+      <p>Harga: Rp84.000</p>
+      <button class="buy-button" onclick="pesanBuku(84000)">Pesan</button>
+    </div>
+    <div class="book">
+      <img src="/photoo/Harry_Potter_and_the_Sorcerer's_Stone.jpg" alt="Buku 6" style="width: 200px;">
+      <h3>Harry Potter and the Sorcerer</h3>
+      <p>Harga: Rp115.000</p>
+      <button class="buy-button" onclick="pesanBuku(115000)">Pesan</button>
+    </div>
+  <div class="book">
+    <img src="/photoo/just-a-friend-to-you.jpg" alt="Buku 7" style="width: 200px;">
+    <h3>Just a friend to you</h3>
+    <p>Harga: Rp67.100</p>
+    <button class="buy-button" onclick="pesanBuku(67100)">Pesan</button>
+  </div>
+  <div class="book">
+      <img src="/photoo/laskar pelangi.jpeg" alt="Buku 8" style="width: 200px;">
+      <h3>Laskar pelangi</h3>
+      <p>Harga: Rp110.000</p>
+      <button class="buy-button" onclick="pesanBuku(110000)">Pesan</button>
+    </div>
+  </div>
+
+  <div class="book-container">
+    <div class="book">
+      <img src="/photoo/Perahu_Kertas.jpg" alt="Buku 9" style="width: 200px;">
+      <h3>Perahu kertas</h3>
+      <p>Harga: Rp92.600</p>
+      <button class="buy-button" onclick="pesanBuku(92600)">Pesan</button>
+    </div>
+    <div class="book">
+      <img src="/photoo/pergi.jpg" alt="Buku 10" style="width: 200px;">
+      <h3>Pergi</h3>
+      <p>Harga: R74.000</p>
+      <button class="buy-button" onclick="pesanBuku(74000)">Pesan</button>
+    </div>
+  <div class="book">
+    <img src="/photoo/septihan.jpeg" alt="Buku 11" style="width: 200px;">
+    <h3>Septihan</h3>
+    <p>Harga: Rp84.100</p>
+    <button class="buy-button" onclick="pesanBuku(84100)">Pesan</button>
+  </div>
+  </div>
+
+
+<br>
+
+<div class="order-form">
+  <label for="total-belanja">Total Belanja:</label>
+  <input type="text" id="total-belanja" readonly>
+  <label for="uang-pelanggan">Uang Pelanggan:</label>
+  <input type="number" id="uang-pelanggan">
+  <button class="calculate-button" onclick="hitungKembalian()">Hitung Kembalian</button>
+</div>
+
+<div class="receipt">
+  <h2>Struk Pembelian</h2>
+  <p>Total Belanja: <span id="total-belanja-struk"></span></p>
+  <p>Uang Pelanggan: <span id="uang-pelanggan-struk"></span></p>
+  <p>Kembalian: <span id="kembalian-struk"></span></p>
+</div>
+
+<a href="/pesan.html"><button>memesan</button></a>
+
+ <script>
+   function pesanBuku(harga) {
+  var totalBelanja = parseInt(document.getElementById("total-belanja").value) || 0;
+  totalBelanja += harga;
+  document.getElementById("total-belanja").value = totalBelanja;
+}
+
+function hitungKembalian() {
+  var totalBelanja = parseInt(document.getElementById("total-belanja").value);
+  var uangPelanggan = parseInt(document.getElementById("uang-pelanggan").value);
+  
+  if (isNaN(uangPelanggan) || uangPelanggan < totalBelanja) {
+    alert("Maaf, masukkan uang yang cukup.");
+    return;
+  }
+
+  var kembalian = uangPelanggan - totalBelanja;
+
+  document.getElementById("total-belanja-struk").textContent = "Rp " + totalBelanja;
+  document.getElementById("uang-pelanggan-struk").textContent = "Rp " + uangPelanggan;
+  document.getElementById("kembalian-struk").textContent = "Rp " + kembalian;
+
+  // Tampilkan struk pembelian
+  document.querySelector(".receipt").style.display = "block";
+
+  // Tampilkan pesan transaksi berhasil
+  alert("Transaksi Anda Berhasil");
+}
+
+ </script>
+  
+</body>
+
+</html>
